@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Jersey+10&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Registro de producto</title>
+    </head>
+    <header>
+        <h1 style="color:blue;">Survival Shop!</h1>
+        <ul>
+            <li><a href="Carga.html">Admin</a></li>
+            <li><a href="tabla.html">Inicio</a></li>
+        </ul>
+    </header>
+    <body>
+      
+        <h1 >Añadir producto</h1>
+        <h2></h2>
+       <form action="#" method="get">
+        
+            <fieldset>
+                <legend>Descripción</legend> 
+                <table border="1px">
+        
+                    <tr>
+                        <td><label for="titulo">Título</label>
+                            <input type="text" id="titulo" name="titulo"></td>
+                        <td><label for="precio">Precio</label>
+                            <input type="number" id="precio" name="precio"><br></td>
+                    </tr>
+
+                 <tr>
+                    <td><p><label for="tipo">Tipo de producto</label></p>
+                        <select name="tipo" id="tipo">
+                            <option value="lacteos">Arma</option>
+                            <option value="panaderia">Consumible</option>
+                            <option value="almacen">Herramientas</option>
+                        </select>
+                    </td>
+                    <td><p>Rareza</p>
+                        <label for="rareza">Nivel de Rareza:</label>
+                        <select id="rareza" name="rareza">
+                            <option value="average">LVL1- Average</option>
+                            <option value="Poco común">LVL2- Poco común</option>
+                            <option value="Épico">LVL3- Épico</option>
+                        </select>
+                        <input type="submit" value="Submit">
+                       <!-- <input type="checkbox" id="chx1" name="chx1">
+                        <label for="chx1">Average</label><br>
+                        <input type="checkbox" id="chx2" name="chx2">
+                        <label for="chx2">Poco común</label><br>
+                        <input type="checkbox" id="chx3" name="chx3">
+                        <label for="chx3">Épico</label><br>
+                    </td>-->
+                 </tr>
+            <tr>
+            <td><p><label for="descripcion">Descripción</label></p>
+            <textarea id="descripcion" name="descripcion" rows="4" cols="55">...
+            </textarea><br></td>
+            <td><p><label for="imagen">Subir imagen</label></p>
+                <input type="file" id="image" name="imagen"></td>
+            </tr>
+            <tr><td><input type="submit" value="Enviar" name="Enviar"><input type="reset" value="Borrar todo"</td></tr>
+             </table>
+             </fieldset>
+        
+        </form>
+        
+        
+    </body>
+    <footer></footer>
+
+
+
+
+
+
+
+
+
+
+</html>
