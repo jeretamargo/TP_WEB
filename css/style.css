@@ -1,3 +1,11 @@
+body {
+  background-color: #1e1e1e;
+}
+
+@font-face {
+  font-family: "Pixel-Titulo";
+  src: url();
+}
 .jersey-10-regular {
   font-family: "Jersey 10", sans-serif;
   font-weight: 400;
@@ -5,6 +13,6 @@
 }
 
 h1 {
-  color: darkblue;
+  color: #AF7EAD;
   font-family: "Jersey 10";
 }/*# sourceMappingURL=style.css.map */
