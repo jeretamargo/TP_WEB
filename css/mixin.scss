@@ -1,0 +1,9 @@
+@mixin gradiente{
+  background-image: radial-gradient($purple,$black)
+}
+@mixin font-face{
+  @font-face {
+  font-family: "Pixel-Titulo";
+  src: url('./fonts/Jersey15-Regular.ttf');
+}
+}
