@@ -2,8 +2,6 @@
 @import "mixin.scss";
 @include font-face;
 
-
-
 body{
   @include gradiente();
 }
@@ -11,8 +9,21 @@ body{
 h1{
     color:$green;
     font-family: "Pixel-Titulo";
+    text-shadow: 1px 1px 0 #000;
 }
 
 p{
   color: $green;
+  text-shadow: 1px 1px 0 #000;
+}
+table{
+  font-family: "Pixel-Texto";
+  color: $green;
+  text-shadow: 1px 1px 0 #000;
+}
+a{
+  font-family: "Pixel-Texto";
+  color: $linkgreen;
+  text-shadow: 1px 1px 0 #000;
+
 }

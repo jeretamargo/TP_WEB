@@ -1,16 +1,34 @@
 @font-face {
   font-family: "Pixel-Titulo";
-  src: url("./fonts/Jersey15-Regular.ttf");
+  src: url("../fonts/Jersey15-Regular.ttf");
+}
+@font-face {
+  font-family: "Pixel-Texto";
+  src: url("../fonts/PixelifySans-VariableFont_wght.ttf");
 }
 body {
   background-image: radial-gradient(#8e44ad, #1e1e1e);
 }
 
 h1 {
-  color: #3f8c55;
+  color: rgba(8, 213, 66, 0.7843137255);
   font-family: "Pixel-Titulo";
+  text-shadow: 1px 1px 0 #000;
 }
 
 p {
-  color: #3f8c55;
+  color: rgba(8, 213, 66, 0.7843137255);
+  text-shadow: 1px 1px 0 #000;
+}
+
+table {
+  font-family: "Pixel-Texto";
+  color: rgba(8, 213, 66, 0.7843137255);
+  text-shadow: 1px 1px 0 #000;
+}
+
+a {
+  font-family: "Pixel-Texto";
+  color: #00c03d;
+  text-shadow: 1px 1px 0 #000;
 }/*# sourceMappingURL=style.css.map */
