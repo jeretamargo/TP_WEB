@@ -16,6 +16,14 @@ h1 {
   text-shadow: 1px 1px 0 #000;
 }
 
+.centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-collapse: separate;
+  border-spacing: 100px 50px;
+}
+
 p {
   color: rgba(8, 213, 66, 0.7843137255);
   text-shadow: 1px 1px 0 #000;

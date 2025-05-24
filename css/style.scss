@@ -4,6 +4,7 @@
 
 body{
   @include gradiente();
+  
 }
 
 h1{
@@ -11,7 +12,14 @@ h1{
     font-family: "Pixel-Titulo";
     text-shadow: 1px 1px 0 #000;
 }
-
+.centrado{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   border-collapse: separate;
+  border-spacing: 100px 50px;
+  
+}
 p{
   color: $green;
   text-shadow: 1px 1px 0 #000;
