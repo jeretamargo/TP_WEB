@@ -15,6 +15,12 @@ body .ofertas {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+body .ofertas .oferta a {
+  text-decoration: none;
+}
+body .ofertas .oferta button {
+  cursor: pointer;
+}
 
 h1 {
   color: rgba(8, 213, 66, 0.7843137255);
