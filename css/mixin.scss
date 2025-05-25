@@ -15,3 +15,5 @@
 @mixin gradiente-general($color1, $color2) {
   background-image: radial-gradient($color1, $color2);
 }
+@mixin gradiente-lineal-transparente($color1, $color2) {
+  background-image: linear-gradient(to right, $color1, $color2);}

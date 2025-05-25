@@ -4,6 +4,7 @@
 header{
   display: flex;// para que aparezcan en la misma linea los bloques 
   align-items: center;
+  @include gradiente-lineal-transparente(rgba(30, 30, 30, 0.3), rgba(8, 213, 66, 0.1));
   
   h1{
     padding: 0px 100px;
