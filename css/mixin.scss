@@ -12,3 +12,6 @@
   src: url('../fonts/PixelifySans-VariableFont_wght.ttf');
 }
 }
+@mixin gradiente-general($color1, $color2) {
+  background-image: radial-gradient($color1, $color2);
+}

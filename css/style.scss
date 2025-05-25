@@ -1,9 +1,40 @@
 @import "variables.scss";
 @import "mixin.scss";
 @include font-face;
+header{
+  display: flex;// para que aparezcan en la misma linea los bloques 
+  align-items: center;
+  
+  h1{
+    padding: 15px 50px;
+  }
+  nav{
+    
+    ul{
+      
+      list-style-type: none;//Elimina las viñetas
+      margin: 0px; //eliminar la configuración predeterminada del navegador
+      padding: 0px;
+    
+      li{
+        float: left;
+        
+        a{
+          display: block;//por defecto el <a> es inline aplico block para que el padding funcione
+          padding:  50px 50px;
+          &:hover{
+            @include gradiente-general($black,$green)
+          }
+        }
 
+      }
+    }
+
+  }
+}
 body{
   @include gradiente();
+  margin: 0px;
 }
 
 h1{

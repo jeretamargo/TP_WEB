@@ -6,8 +6,32 @@
   font-family: "Pixel-Texto";
   src: url("../fonts/PixelifySans-VariableFont_wght.ttf");
 }
+header {
+  display: flex;
+  align-items: center;
+}
+header h1 {
+  padding: 15px 50px;
+}
+header nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+header nav ul li {
+  float: left;
+}
+header nav ul li a {
+  display: block;
+  padding: 50px 50px;
+}
+header nav ul li a:hover {
+  background-image: radial-gradient(#1e1e1e, rgba(8, 213, 66, 0.7843137255));
+}
+
 body {
   background-image: radial-gradient(#8e44ad, #1e1e1e);
+  margin: 0px;
 }
 
 h1 {
