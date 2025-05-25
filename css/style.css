@@ -9,6 +9,12 @@
 body {
   background-image: radial-gradient(#8e44ad, #1e1e1e);
 }
+body .ofertas {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
 h1 {
   color: rgba(8, 213, 66, 0.7843137255);
