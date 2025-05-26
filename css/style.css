@@ -56,6 +56,77 @@ body .ofertas .oferta a {
 body .ofertas .oferta button {
   cursor: pointer;
 }
+body .titulo-loots-diarios {
+  margin-top: 1em;
+  width: 100%;
+  font-size: 2em;
+  color: rgba(8, 213, 66, 0.7843137255);
+  font-family: "Pixel-Titulo";
+  text-shadow: 1px 1px 0 #000;
+  text-align: center;
+}
+
+.titulo-inventario {
+  margin-top: 1em;
+  width: 100%;
+  font-size: 2em;
+  color: rgba(8, 213, 66, 0.7843137255);
+  font-family: "Pixel-Titulo";
+  text-shadow: 1px 1px 0 #000;
+  text-align: center;
+}
+
+.productos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: #00c03d;
+  position: relative;
+}
+
+.producto_consumible img,
+.producto_arma img,
+.producto_herramienta img {
+  display: block;
+  width: 250px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 1;
+}
+
+.producto_consumible,
+.producto_arma,
+.producto_herramienta {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 4rem;
+  border-radius: 8px;
+  top: 5%;
+  width: 270px;
+  height: 250px;
+}
+
+.producto_consumible:hover,
+.producto_arma:hover,
+.producto_herramienta:hover {
+  background-image: radial-gradient(#1e1e1e, rgba(8, 213, 66, 0.7843137255));
+}
+
+.producto_consumible h3,
+.producto_arma h3,
+.producto_herramienta h3 {
+  position: absolute;
+  top: 30%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 0.5rem;
+  text-shadow: 0px 0px 6px #000;
+  font-size: 25pt;
+  z-index: 2;
+}
 
 h1 {
   color: rgba(8, 213, 66, 0.7843137255);
@@ -78,4 +149,5 @@ a {
   font-family: "Pixel-Texto";
   color: #00c03d;
   text-shadow: 1px 1px 0 #000;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

@@ -63,9 +63,80 @@ body{
       }
     }
   }
-  
+  .titulo-loots-diarios{
+    margin-top: 1em;
+    width: 100%;
+    font-size: 2em;
+    color:$green;
+    font-family: "Pixel-Titulo";
+    text-shadow: 1px 1px 0 #000;
+    text-align: center;
+}
+}
+//PRODUCTOS INICIO
+
+.titulo-inventario{
+    margin-top: 1em;
+    width: 100%;
+    font-size: 2em;
+    color:$green;
+    font-family: "Pixel-Titulo";
+    text-shadow: 1px 1px 0 #000;
+    text-align: center;
 }
 
+.productos{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: $linkgreen;
+  position: relative;
+}
+
+
+.producto_consumible img,
+.producto_arma img,
+.producto_herramienta img {
+  display: block;
+  width: 250px; 
+  height: auto;
+  object-fit: contain;
+  z-index: 1;
+}
+.producto_consumible,
+.producto_arma,
+.producto_herramienta{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 4rem;
+  border-radius: 8px;
+  top: 5%;
+  width: 270px; 
+  height: 250px;
+}
+.producto_consumible:hover,
+.producto_arma:hover,
+.producto_herramienta:hover{
+   @include gradiente-general($black,$green)
+}
+.producto_consumible h3 ,
+.producto_arma h3 ,
+.producto_herramienta h3{
+  position: absolute;
+  top: 30%;                   // Centra verticalmente (mitad del contenedor)
+  left: 52%;                  // Centra horizontalmente
+  transform: translate(-50%, -50%); // Ajusta el punto de anclaje al centro
+  margin-bottom: 0.5rem;
+  text-shadow: 0px 0px 6px #000;
+  font-size: 25pt;
+  z-index: 2;
+  
+
+}
+
+//PRODUCTOS FIN
 h1{
     color:$green;
     font-family: "Pixel-Titulo";
@@ -85,5 +156,6 @@ a{
   font-family: "Pixel-Texto";
   color: $linkgreen;
   text-shadow: 1px 1px 0 #000;
+  text-decoration: none;
 
 }
