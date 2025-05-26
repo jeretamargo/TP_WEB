@@ -6,8 +6,54 @@
   font-family: "Pixel-Texto";
   src: url("../fonts/PixelifySans-VariableFont_wght.ttf");
 }
+header {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to right, rgba(30, 30, 30, 0.3), rgba(8, 213, 66, 0.1));
+}
+header h1 {
+  padding: 0px 100px;
+}
+header nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+header nav ul li {
+  float: left;
+}
+header nav ul li a {
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  display: block;
+  padding: 15px 15px;
+}
+header nav ul li a:hover {
+  background-image: radial-gradient(#1e1e1e, rgba(8, 213, 66, 0.7843137255));
+}
+header nav ul li svg {
+  margin-right: 8px;
+  height: 30px;
+  width: 30px;
+}
+
 body {
   background-image: radial-gradient(#8e44ad, #1e1e1e);
+  margin: 0px;
+  padding: 0px;
+}
+body .ofertas {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+body .ofertas .oferta a {
+  text-decoration: none;
+}
+body .ofertas .oferta button {
+  cursor: pointer;
 }
 
 h1 {

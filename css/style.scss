@@ -1,9 +1,68 @@
 @import "variables.scss";
 @import "mixin.scss";
 @include font-face;
+header{
+  display: flex;// para que aparezcan en la misma linea los bloques 
+  align-items: center;
+  @include gradiente-lineal-transparente(rgba(30, 30, 30, 0.3), rgba(8, 213, 66, 0.1));
+  
+  h1{
+    padding: 0px 100px;
+  }
+  nav{
+    
+    ul{
+      
+      list-style-type: none;//Elimina las viñetas
+      margin: 0px; //eliminar la configuración predeterminada del navegador
+      padding: 0px;
+    
+      li{
+        float: left;
+        
+        a{
+          border-radius: 8px;
+          transition: background 0.3s ease;
+          text-decoration: none;//saca subrayado de los links
+          display: block;//por defecto el <a> es inline aplico block para que el padding funcione
+          padding:  15px 15px;
+          &:hover{
+            @include gradiente-general($black,$green)
+          }
+          
+        }
+        svg{
+          margin-right: 8px;//separa el icono del link
+            height: 30px;
+            width: 30px;
+          }
+      }
+    }
 
+  }
+}
 body{
   @include gradiente();
+  margin: 0px;
+  padding: 0px;
+
+  .ofertas{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;//Items will have space before, between, and after them
+    flex-wrap: wrap;// para que bajen si no hay espacio
+    .oferta{
+
+      a{
+        text-decoration: none;
+
+      }
+      button{
+       cursor: pointer; 
+      }
+    }
+  }
+  
 }
 
 h1{
