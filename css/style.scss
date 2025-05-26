@@ -45,6 +45,24 @@ body{
   @include gradiente();
   margin: 0px;
   padding: 0px;
+
+  .ofertas{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;//Items will have space before, between, and after them
+    flex-wrap: wrap;// para que bajen si no hay espacio
+    .oferta{
+
+      a{
+        text-decoration: none;
+
+      }
+      button{
+       cursor: pointer; 
+      }
+    }
+  }
+  
 }
 
 h1{
