@@ -41,7 +41,8 @@ header nav ul li svg {
 body {
   background-image: radial-gradient(#8e44ad, #1e1e1e);
   margin: 0px;
-  padding: 0px;
+  padding-bottom: 60px;
+  position: relative;
 }
 body .ofertas {
   font-family: "Pixel-Titulo";
@@ -150,4 +151,12 @@ a {
   color: #00c03d;
   text-shadow: 1px 1px 0 #000;
   text-decoration: none;
+}
+
+footer {
+  position: absolute;
+  bottom: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

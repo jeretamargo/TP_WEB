@@ -44,7 +44,8 @@ header{
 body{
   @include gradiente();
   margin: 0px;
-  padding: 0px;
+  padding-bottom: 60px;
+  position: relative;
 
   .ofertas{
     font-family: "Pixel-Titulo";
@@ -158,4 +159,11 @@ a{
   text-shadow: 1px 1px 0 #000;
   text-decoration: none;
 
+}
+footer{
+  position: absolute;//posicion relativa al primer ancestro
+  bottom: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
