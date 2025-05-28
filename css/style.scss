@@ -51,7 +51,7 @@ body{
     font-family: "Pixel-Titulo";
     display: flex;
     gap: 20px;
-    justify-content: space-around;//Items will have space before, between, and after them
+    justify-content: space-around;//los items tienen espacio alrededor
     flex-wrap: wrap;// para que bajen si no hay espacio
     .oferta{
 
@@ -86,7 +86,7 @@ body{
     text-align: center;
 }
 
-.productos{
+.card_productos{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -95,18 +95,18 @@ body{
 }
 
 
-.producto_consumible img,
-.producto_arma img,
-.producto_herramienta img {
+.card_producto_consumible img,
+.card_producto_arma img,
+.card_producto_herramienta img {
   display: block;
   width: 250px; 
   height: auto;
   object-fit: contain;
   z-index: 1;
 }
-.producto_consumible,
-.producto_arma,
-.producto_herramienta{
+.card_producto_consumible,
+.card_producto_arma,
+.card_producto_herramienta{
   position: relative;
   display: flex;
   flex-direction: column;
@@ -117,14 +117,14 @@ body{
   width: 270px; 
   height: 250px;
 }
-.producto_consumible:hover,
-.producto_arma:hover,
-.producto_herramienta:hover{
+.card_producto_consumible:hover,
+.card_producto_arma:hover,
+.card_producto_herramienta:hover{
    @include gradiente-general($black,$green)
 }
-.producto_consumible h3 ,
-.producto_arma h3 ,
-.producto_herramienta h3{
+.card_producto_consumible h3 ,
+.card_producto_arma h3 ,
+.card_producto_herramienta h3{
   position: absolute;
   top: 30%;                   // Centra verticalmente (mitad del contenedor)
   left: 52%;                  // Centra horizontalmente
@@ -151,34 +151,147 @@ body{
     text-align: center;
 }
 body{
-  form{
-    color:$green;
-    font-family: "Pixel-Texto";
-    text-shadow: 1px 1px 0 #000;
-    flex: wrap;
-    border-radius: 10px;
-    border: 2px solid $green;
-    padding: 2%;
-    box-shadow: 10px 10px 8px $black;
-    input{
+  .form_contacto{
+      color:$green;
+      font-family: "Pixel-Texto";
+      text-shadow: 1px 1px 0 #000;
+      flex: wrap;
+      border-radius: 10px;
+      border: 2px solid $green;
+      padding: 2%;
+      box-shadow: 10px 10px 8px $black;
+      input{
+        width: 100%;
+        margin-bottom: 2%;
+        box-sizing: border-box;
+        border-radius: 4px;
+        border: 2px solid $black;
+      }
+      textarea{
+        display:flex;
+        position:relative;
+        right: 2%;
+        margin: 4%;
+        border-radius: 4px;
+        border: 2px solid $black;
+      }
+    }
+  }
+
+//CONTACTO FIN
+
+//LISTA_PRODUCTOS_INICIO
+body{
+ .titulo_productos{
+      display:inline;
+      margin-top: 1em;
       width: 100%;
-      margin-bottom: 2%;
-      box-sizing: border-box;
-      border-radius: 4px;
-      border: 2px solid $black;
+      font-size: 2em;
+      color:$green;
+      font-family: "Pixel-Titulo";
+      text-shadow: 1px 1px 0 #000;
+      text-align: center;
+ }
+ .productos{
+   position: relative;
+   display: flex;
+   gap:1%;
+
+   justify-content: space-around;//los items tienen espacio alrededor
+   flex-wrap: wrap;// para que bajen si no hay espacio
+   
+   .producto{
+    padding: 2%;
+    border-radius: 10px;
+    border: 2px solid $border;
+   }
+   
+   .precio{
+        font-family: "Pixel-Titulo";
+        font-size: 1.2em;
+        
+      }
+    
+    p{
+      font-family: "Pixel-Texto";
+      
     }
-    textarea{
-      display:flex;
-      position:relative;
-      right: 2%;
-      margin: 4%;
-      border-radius: 4px;
-      border: 2px solid $black;
-    }
+     .average{
+        font-size: 1.1em;
+        color: $average;
+        text-shadow: 2px 2px  #000;
+      }
+      .poco_comun{
+        font-size: 1.1em;
+        color:$poco_comun;
+        text-shadow: 0 0 1em #fff700
+      }
+      .epico{
+        font-size: 1.1em;
+        color:$epic;
+        text-shadow: 0 0 1em #ff0033;
+        
+      }
+      a{
+        justify-content: space-around;
+        text-align: center;
+        font-size: 1.2em;
+      }
+      
   }
 }
 
-//CONTACTO FIN
+//LISTA_PRODUCTOS_FIN
+
+//FICHA_PRODUCTO_INICIO
+body{
+  .titulo_ficha{
+      display:inline-block;
+      width: 100%;
+      font-size: 2em;
+      color:$green;
+      font-family: "Pixel-Titulo";
+      text-shadow: 1px 1px 0 #000;
+      text-align: center;
+      
+  }
+  .ficha_producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+   
+  }
+  .precio{
+        font-family: "Pixel-Titulo";
+        font-size: 1.2em;
+        
+      }
+    
+    p{
+      font-family: "Pixel-Texto";
+      
+    }
+     .average{
+        font-size: 1.1em;
+        color: $average;
+        text-shadow: 2px 2px  #000;
+      }
+      .poco_comun{
+        font-size: 1.1em;
+        color:$poco_comun;
+        text-shadow: 0 0 1em #fff700
+      }
+      .epico{
+        font-size: 1.1em;
+        color:$epic;
+        text-shadow: 0 0 1em #ff0033;
+        
+      }
+}
+//FICHA_PRODUCTO_FIN
 h1{
     color:$green;
     font-family: "Pixel-Titulo";

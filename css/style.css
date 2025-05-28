@@ -77,7 +77,7 @@ body .titulo-loots-diarios {
   text-align: center;
 }
 
-.productos {
+.card_productos {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -85,9 +85,9 @@ body .titulo-loots-diarios {
   position: relative;
 }
 
-.producto_consumible img,
-.producto_arma img,
-.producto_herramienta img {
+.card_producto_consumible img,
+.card_producto_arma img,
+.card_producto_herramienta img {
   display: block;
   width: 250px;
   height: auto;
@@ -96,9 +96,9 @@ body .titulo-loots-diarios {
   z-index: 1;
 }
 
-.producto_consumible,
-.producto_arma,
-.producto_herramienta {
+.card_producto_consumible,
+.card_producto_arma,
+.card_producto_herramienta {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -110,15 +110,15 @@ body .titulo-loots-diarios {
   height: 250px;
 }
 
-.producto_consumible:hover,
-.producto_arma:hover,
-.producto_herramienta:hover {
+.card_producto_consumible:hover,
+.card_producto_arma:hover,
+.card_producto_herramienta:hover {
   background-image: radial-gradient(#1e1e1e, rgba(8, 213, 66, 0.7843137255));
 }
 
-.producto_consumible h3,
-.producto_arma h3,
-.producto_herramienta h3 {
+.card_producto_consumible h3,
+.card_producto_arma h3,
+.card_producto_herramienta h3 {
   position: absolute;
   top: 30%;
   left: 52%;
@@ -139,7 +139,7 @@ body .titulo-loots-diarios {
   text-align: center;
 }
 
-body form {
+body .form_contacto {
   color: rgba(8, 213, 66, 0.7843137255);
   font-family: "Pixel-Texto";
   text-shadow: 1px 1px 0 #000;
@@ -149,20 +149,109 @@ body form {
   padding: 2%;
   box-shadow: 10px 10px 8px #1e1e1e;
 }
-body form input {
+body .form_contacto input {
   width: 100%;
   margin-bottom: 2%;
   box-sizing: border-box;
   border-radius: 4px;
   border: 2px solid #1e1e1e;
 }
-body form textarea {
+body .form_contacto textarea {
   display: flex;
   position: relative;
   right: 2%;
   margin: 4%;
   border-radius: 4px;
   border: 2px solid #1e1e1e;
+}
+
+body .titulo_productos {
+  display: inline;
+  margin-top: 1em;
+  width: 100%;
+  font-size: 2em;
+  color: rgba(8, 213, 66, 0.7843137255);
+  font-family: "Pixel-Titulo";
+  text-shadow: 1px 1px 0 #000;
+  text-align: center;
+}
+body .productos {
+  position: relative;
+  display: flex;
+  gap: 1%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+body .productos .producto {
+  padding: 2%;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 255, 0, 0.235);
+}
+body .productos .precio {
+  font-family: "Pixel-Titulo";
+  font-size: 1.2em;
+}
+body .productos p {
+  font-family: "Pixel-Texto";
+}
+body .productos .average {
+  font-size: 1.1em;
+  color: #aaaaaa;
+  text-shadow: 2px 2px #000;
+}
+body .productos .poco_comun {
+  font-size: 1.1em;
+  color: #fff700;
+  text-shadow: 0 0 1em #fff700;
+}
+body .productos .epico {
+  font-size: 1.1em;
+  color: #ff0033;
+  text-shadow: 0 0 1em #ff0033;
+}
+body .productos a {
+  justify-content: space-around;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+body .titulo_ficha {
+  display: inline-block;
+  width: 100%;
+  font-size: 2em;
+  color: rgba(8, 213, 66, 0.7843137255);
+  font-family: "Pixel-Titulo";
+  text-shadow: 1px 1px 0 #000;
+  text-align: center;
+}
+body .ficha_producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+body .precio {
+  font-family: "Pixel-Titulo";
+  font-size: 1.2em;
+}
+body p {
+  font-family: "Pixel-Texto";
+}
+body .average {
+  font-size: 1.1em;
+  color: #aaaaaa;
+  text-shadow: 2px 2px #000;
+}
+body .poco_comun {
+  font-size: 1.1em;
+  color: #fff700;
+  text-shadow: 0 0 1em #fff700;
+}
+body .epico {
+  font-size: 1.1em;
+  color: #ff0033;
+  text-shadow: 0 0 1em #ff0033;
 }
 
 h1 {
