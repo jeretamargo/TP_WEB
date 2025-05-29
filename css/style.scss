@@ -311,10 +311,25 @@ a{
   text-decoration: none;
 
 }
+
 footer{
-  position: absolute;//posicion relativa al primer ancestro
-  bottom: 0%;
-  display: flex;
-  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  gap: 0.2%;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  a{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2%;
+  p{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2%;
+  }
+  
+  }
 }
+

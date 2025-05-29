@@ -274,8 +274,19 @@ a {
 
 footer {
   position: absolute;
-  bottom: 0%;
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+  gap: 0.2%;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+footer a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2%;
+}
+footer a p {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2%;
 }/*# sourceMappingURL=style.css.map */
