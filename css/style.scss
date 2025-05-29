@@ -313,6 +313,10 @@ a{
 }
 
 footer{
+  @include gradiente-lineal-transparente(rgba(30,30,30,0.2),rgba(80, 7, 90, 0.096));
+  
+  
+
   position: absolute;
   width: 100%;
   gap: 0.2%;

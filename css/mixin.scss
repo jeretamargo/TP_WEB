@@ -17,3 +17,7 @@
 }
 @mixin gradiente-lineal-transparente($color1, $color2) {
   background-image: linear-gradient(to right, $color1, $color2);}
+@function gradiente-angulo($angulo,$color1,$color2){
+
+@return linear-gradient(#{$angulo}deg,$color1,$color2);
+}
