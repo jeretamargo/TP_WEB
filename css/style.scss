@@ -4,10 +4,16 @@
 header{
   display: flex;// para que aparezcan en la misma linea los bloques 
   align-items: center;
-  @include gradiente-lineal-transparente(rgba(30, 30, 30, 0.3), rgba(8, 213, 66, 0.1));
+  
+  
+  @include gradiente-lineal-transparente(rgba(27, 44, 154, 0.3), rgba(76, 229, 224, 0.1));
   
   h1{
     padding: 0px 100px;
+    color: $cyanAccent;
+    font-family: "Pixel-Titulo";
+    font-size: 2.5em;
+    text-shadow: 2px 2px 0 #020fc2;
   }
   nav{
     
@@ -21,13 +27,15 @@ header{
         float: left;
         
         a{
+          font-size: 1.2em;
           border-radius: 8px;
           transition: background 0.3s ease;
           text-decoration: none;//saca subrayado de los links
           display: block;//por defecto el <a> es inline aplico block para que el padding funcione
           padding:  15px 15px;
+          color: $brightYellow;
           &:hover{
-            @include gradiente-general($black,$green)
+            @include gradiente-general($deepBlue,$neonPink)
           }
           
         }
@@ -42,9 +50,10 @@ header{
   }
 }
 body{
+  
   @include gradiente();
   margin: 0px;
-  padding-bottom: 60px;
+  
   position: relative;
 
   .ofertas{
@@ -64,13 +73,16 @@ body{
       }
     }
   }
+  main{
+    margin-bottom: 60px;
+  }
   .titulo-loots-diarios{
     margin-top: 1em;
     width: 100%;
     font-size: 2em;
-    color:$green;
+    color:$deepBlue;
     font-family: "Pixel-Titulo";
-    text-shadow: 1px 1px 0 #000;
+    text-shadow: 1px 1px 0 white;
     text-align: center;
 }
 }
@@ -80,9 +92,9 @@ body{
     margin-top: 1em;
     width: 100%;
     font-size: 2em;
-    color:$green;
+    color:$deepBlue;
     font-family: "Pixel-Titulo";
-    text-shadow: 1px 1px 0 #000;
+    text-shadow: 1px 1px 0 white;
     text-align: center;
 }
 
@@ -90,7 +102,7 @@ body{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  color: $linkgreen;
+  color: $brightYellow;
   position: relative;
 }
 
@@ -112,7 +124,7 @@ body{
   flex-direction: column;
   align-items: center;
   margin: 0 4rem;
-  border-radius: 8px;
+  border-radius: 30px;
   top: 5%;
   width: 270px; 
   height: 250px;
@@ -120,7 +132,9 @@ body{
 .card_producto_consumible:hover,
 .card_producto_arma:hover,
 .card_producto_herramienta:hover{
-   @include gradiente-general($black,$green)
+   @include gradiente-general($deepBlue,$neonPink);
+   transition:background 00.2s;
+   
 }
 .card_producto_consumible h3 ,
 .card_producto_arma h3 ,
@@ -145,19 +159,20 @@ body{
     margin-top: 1em;
     width: 100%;
     font-size: 2em;
-    color:$green;
+    color:$deepBlue;
     font-family: "Pixel-Titulo";
-    text-shadow: 1px 1px 0 #000;
+    text-shadow: 1px 1px 0 white;
     text-align: center;
 }
 body{
   .form_contacto{
-      color:$green;
+    font-size: 1.2em;
+      color:$deepBlue;
       font-family: "Pixel-Texto";
-      text-shadow: 1px 1px 0 #000;
+      text-shadow: 1px 1px 0 rgb(19, 18, 18);
       flex: wrap;
       border-radius: 10px;
-      border: 2px solid $green;
+      border: 2px solid $cyanAccent;
       padding: 2%;
       box-shadow: 10px 10px 8px $black;
       input{
@@ -186,8 +201,8 @@ body{
       display:inline;
       margin-top: 1em;
       width: 100%;
-      font-size: 2em;
-      color:$green;
+      font-size: 4em;
+      color:$deepBlue;
       font-family: "Pixel-Titulo";
       text-shadow: 1px 1px 0 #000;
       text-align: center;
@@ -208,7 +223,7 @@ body{
    
    .precio{
         font-family: "Pixel-Titulo";
-        font-size: 1.2em;
+        font-size: 2em;
         
       }
     
@@ -249,7 +264,7 @@ body{
       display:inline-block;
       width: 100%;
       font-size: 2em;
-      color:$green;
+      color:$brightYellow;
       font-family: "Pixel-Titulo";
       text-shadow: 1px 1px 0 #000;
       text-align: center;
@@ -292,28 +307,26 @@ body{
       }
 }
 //FICHA_PRODUCTO_FIN
-h1{
-    color:$green;
-    font-family: "Pixel-Titulo";
-    text-shadow: 1px 1px 0 #000;
-    
-}
+
 
 p{
-  color: $green;
+  color: white;
   text-shadow: 1px 1px 0 #000;
+  text-decoration-color: #000;
 }
 
 a{
   font-family: "Pixel-Texto";
-  color: $linkgreen;
-  text-shadow: 1px 1px 0 #000;
+  color: $deepBlue;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 0 white;
   text-decoration: none;
-
 }
 
+
+
 footer{
-  @include gradiente-lineal-transparente(rgba(30,30,30,0.2),rgba(80, 7, 90, 0.096));
+  @include gradiente-lineal-transparente(rgba(30, 30, 30, 0.048),rgba(190, 6, 214, 0.26));
   
   
 
