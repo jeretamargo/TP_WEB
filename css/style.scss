@@ -5,7 +5,7 @@ header{
   @include gradiente-lineal-transparente(rgba(27, 44, 154, 0.3), rgba(76, 229, 224, 0.1));
   
   h1{
-    padding: 0px 100px;
+    padding: 20%;
     color: $cyanAccent;
     font-family: "Pixel-Titulo";
     font-size: 2.5em;
@@ -59,6 +59,15 @@ header{
 }
 body{
   
+  .titulo{
+    width: 100%;
+    color:$deepBlue;
+    font-family: "Pixel-Titulo";
+    text-shadow: 1px 1px  white;
+    font-size: clamp(3rem, 4vw, 3.5rem);;
+    
+}
+  
   @include gradiente();
  
     
@@ -75,26 +84,11 @@ body{
        cursor: pointer; 
       }
     }
-  }
-  .titulo-loots-diarios{
-    font-size: 4%;
-    color:$deepBlue;
-    font-family: "Pixel-Titulo";
-    text-shadow: 1px 1px  white;
     
-}
+  }
+  
 //}
 //PRODUCTOS INICIO
-
-.titulo-inventario{
-    color:$deepBlue;
-    font-family: "Pixel-Titulo";
-    text-shadow: 1px 1px 0 white;
-    font-size: 15%;
-}
-
-
-
 
 .card_producto_consumible img,
 .card_producto_arma img,
@@ -129,8 +123,8 @@ body{
 .card_producto_arma h3 ,
 .card_producto_herramienta h3{
   position: absolute;
-  top: 30%;                   // Centra verticalmente (mitad del contenedor)
-  left: 52%;                  // Centra horizontalmente
+  top: 43%;                   // Centra verticalmente (mitad del contenedor)
+  left: 50%;                  // Centra horizontalmente
   transform: translate(-50%, -50%); // Ajusta el punto de anclaje al centro
   margin-bottom: 0.5rem;
   text-shadow: 0px 0px 6% #000;
@@ -144,19 +138,20 @@ body{
 
 
 //CONTACTO INICIO
-.titulo-contacto{ 
-    font-size: 2em;
-    color:$deepBlue;
-    font-family: "Pixel-Titulo";
-    text-shadow: 1px 1px 0 white;
-}
+
 .formulario{
   font-family: "Pixel-Texto";
   font-size: 1.2em;
   color:$deepBlue;
   text-shadow: 1px 1px 1px white;
-}
+  textarea{
+    resize:none;
+  }
   
+  
+  
+}
+
 
 
 

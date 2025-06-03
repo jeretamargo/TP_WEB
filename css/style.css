@@ -10,7 +10,7 @@ header {
   background-image: linear-gradient(to right, rgba(27, 44, 154, 0.3), rgba(76, 229, 224, 0.1));
 }
 header h1 {
-  padding: 0px 100px;
+  padding: 20%;
   color: rgb(76, 229, 224);
   font-family: "Pixel-Titulo";
   font-size: 2.5em;
@@ -50,6 +50,13 @@ header nav ul li svg {
 body {
   background-image: radial-gradient(rgb(76, 229, 224), rgb(27, 44, 154));
 }
+body .titulo {
+  width: 100%;
+  color: rgb(27, 44, 154);
+  font-family: "Pixel-Titulo";
+  text-shadow: 1px 1px white;
+  font-size: clamp(3rem, 4vw, 3.5rem);
+}
 body .oferta img {
   size: 50%;
   width: 100%;
@@ -59,20 +66,6 @@ body .oferta a {
 }
 body .oferta button {
   cursor: pointer;
-}
-
-.titulo-loots-diarios {
-  font-size: 4%;
-  color: rgb(27, 44, 154);
-  font-family: "Pixel-Titulo";
-  text-shadow: 1px 1px white;
-}
-
-.titulo-inventario {
-  color: rgb(27, 44, 154);
-  font-family: "Pixel-Titulo";
-  text-shadow: 1px 1px 0 white;
-  font-size: 15%;
 }
 
 .card_producto_consumible img,
@@ -111,8 +104,8 @@ body .oferta button {
 .card_producto_arma h3,
 .card_producto_herramienta h3 {
   position: absolute;
-  top: 30%;
-  left: 52%;
+  top: 43%;
+  left: 50%;
   transform: translate(-50%, -50%);
   margin-bottom: 0.5rem;
   text-shadow: 0px 0px 6% #000;
@@ -120,18 +113,14 @@ body .oferta button {
   z-index: 2;
 }
 
-.titulo-contacto {
-  font-size: 2em;
-  color: rgb(27, 44, 154);
-  font-family: "Pixel-Titulo";
-  text-shadow: 1px 1px 0 white;
-}
-
 .formulario {
   font-family: "Pixel-Texto";
   font-size: 1.2em;
   color: rgb(27, 44, 154);
   text-shadow: 1px 1px 1px white;
+}
+.formulario textarea {
+  resize: none;
 }
 
 body .titulo_productos {
