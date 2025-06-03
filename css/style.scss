@@ -159,6 +159,11 @@ body{
 
 //LISTA_PRODUCTOS_INICIO
 body{
+  main{
+    a{
+      text-decoration: none;
+    }
+  }
  .titulo_productos{
       display:inline;
       margin-top: 1em;

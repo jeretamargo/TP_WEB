@@ -123,6 +123,9 @@ body .oferta button {
   resize: none;
 }
 
+body main a {
+  text-decoration: none;
+}
 body .titulo_productos {
   display: inline;
   margin-top: 1em;
