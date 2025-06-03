@@ -296,26 +296,8 @@ footer{
   @include gradiente-lineal-transparente(rgba(30, 30, 30, 0.048),rgba(190, 6, 214, 0.26));
   
   
-
-//  position: absolute;
- // width: 100%;
- // gap: 0.2%;
- // align-items: center;
- // justify-content: center;
- // text-align: center;
-  
- // a{
-//    display: flex;
-//    flex-direction: column;
-//    gap: 0.2%;
-//  p{
-//    display: flex;
-//    flex-direction: column;
-//    gap: 0.2%;
- // }
-  
   }
-//}
+
 
 * {
   box-sizing: border-box;
@@ -323,6 +305,6 @@ footer{
 body {
   overflow-x: hidden;
 }
-* {
-  outline: 1px solid rgba(255, 0, 0, 0.2);
-}
+//* {
+//  outline: 1px solid rgba(255, 0, 0, 0.2);
+//}
