@@ -7,8 +7,6 @@
   src: url("../fonts/PixelifySans-VariableFont_wght.ttf");
 }
 header {
-  display: flex;
-  align-items: center;
   background-image: linear-gradient(to right, rgba(27, 44, 154, 0.3), rgba(76, 229, 224, 0.1));
 }
 header h1 {
@@ -20,84 +18,68 @@ header h1 {
 }
 header nav ul {
   list-style-type: none;
-  margin: 0px;
-  padding: 0px;
 }
 header nav ul li {
-  float: left;
+  text-align: center;
 }
 header nav ul li a {
   font-size: 1.2em;
   border-radius: 8px;
   transition: background 0.3s ease;
   text-decoration: none;
-  display: block;
-  padding: 15px 15px;
   color: #ffe36e;
 }
 header nav ul li a:hover {
   background-image: radial-gradient(rgb(27, 44, 154), #ff3cb1);
 }
 header nav ul li svg {
-  margin-right: 8px;
-  height: 30px;
-  width: 30px;
+  width: 2.2rem;
+  height: auto;
+}
+@media (min-width: 768px) {
+  header nav ul li svg {
+    width: 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  header nav ul li svg {
+    width: 3rem;
+  }
 }
 
 body {
   background-image: radial-gradient(rgb(76, 229, 224), rgb(27, 44, 154));
-  margin: 0px;
-  position: relative;
 }
-body .ofertas {
-  font-family: "Pixel-Titulo";
-  display: flex;
-  gap: 20px;
-  justify-content: space-around;
-  flex-wrap: wrap;
+body .oferta img {
+  size: 50%;
+  width: 100%;
 }
-body .ofertas .oferta a {
+body .oferta a {
   text-decoration: none;
 }
-body .ofertas .oferta button {
+body .oferta button {
   cursor: pointer;
 }
-body main {
-  margin-bottom: 60px;
-}
-body .titulo-loots-diarios {
-  margin-top: 1em;
-  width: 100%;
-  font-size: 2em;
+
+.titulo-loots-diarios {
+  font-size: 4%;
   color: rgb(27, 44, 154);
   font-family: "Pixel-Titulo";
-  text-shadow: 1px 1px 0 white;
-  text-align: center;
+  text-shadow: 1px 1px white;
 }
 
 .titulo-inventario {
-  margin-top: 1em;
-  width: 100%;
-  font-size: 2em;
   color: rgb(27, 44, 154);
   font-family: "Pixel-Titulo";
   text-shadow: 1px 1px 0 white;
-  text-align: center;
-}
-
-.card_productos {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  color: #ffe36e;
-  position: relative;
+  font-size: 15%;
 }
 
 .card_producto_consumible img,
 .card_producto_arma img,
 .card_producto_herramienta img {
   display: block;
-  width: 250px;
+  width: 100%;
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
@@ -111,11 +93,11 @@ body .titulo-loots-diarios {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 4rem;
-  border-radius: 30px;
+  margin: 1rem auto;
+  border-radius: 30%;
   top: 5%;
-  width: 270px;
-  height: 250px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .card_producto_consumible:hover,
@@ -133,46 +115,23 @@ body .titulo-loots-diarios {
   left: 52%;
   transform: translate(-50%, -50%);
   margin-bottom: 0.5rem;
-  text-shadow: 0px 0px 6px #000;
+  text-shadow: 0px 0px 6% #000;
   font-size: 25pt;
   z-index: 2;
 }
 
 .titulo-contacto {
-  margin-top: 1em;
-  width: 100%;
   font-size: 2em;
   color: rgb(27, 44, 154);
   font-family: "Pixel-Titulo";
   text-shadow: 1px 1px 0 white;
-  text-align: center;
 }
 
-body .form_contacto {
+.formulario {
+  font-family: "Pixel-Texto";
   font-size: 1.2em;
   color: rgb(27, 44, 154);
-  font-family: "Pixel-Texto";
-  text-shadow: 1px 1px 0 rgb(19, 18, 18);
-  flex: wrap;
-  border-radius: 10px;
-  border: 2px solid rgb(76, 229, 224);
-  padding: 2%;
-  box-shadow: 10px 10px 8px #1e1e1e;
-}
-body .form_contacto input {
-  width: 100%;
-  margin-bottom: 2%;
-  box-sizing: border-box;
-  border-radius: 4px;
-  border: 2px solid #1e1e1e;
-}
-body .form_contacto textarea {
-  display: flex;
-  position: relative;
-  right: 2%;
-  margin: 4%;
-  border-radius: 4px;
-  border: 2px solid #1e1e1e;
+  text-shadow: 1px 1px 1px white;
 }
 
 body .titulo_productos {
@@ -194,8 +153,8 @@ body .productos {
 }
 body .productos .producto {
   padding: 2%;
-  border-radius: 10px;
-  border: 2px solid rgba(0, 255, 0, 0.235);
+  border-radius: 10%;
+  border: 2% solid rgba(0, 255, 0, 0.235);
 }
 body .productos .precio {
   font-family: "Pixel-Titulo";
@@ -280,20 +239,16 @@ a {
 
 footer {
   background-image: linear-gradient(to right, rgba(30, 30, 30, 0.048), rgba(190, 6, 214, 0.26));
-  position: absolute;
-  width: 100%;
-  gap: 0.2%;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
-footer a {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2%;
+
+* {
+  box-sizing: border-box;
 }
-footer a p {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2%;
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  outline: 1px solid rgba(255, 0, 0, 0.2);
 }/*# sourceMappingURL=style.css.map */
