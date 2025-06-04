@@ -185,20 +185,13 @@ body .productos a {
 }
 
 body .titulo_ficha {
-  display: inline-block;
-  width: 100%;
-  font-size: 2em;
+  font-size: 10em;
   color: #ffe36e;
   font-family: "Pixel-Titulo";
   text-shadow: 1px 1px 0 #000;
-  text-align: center;
 }
-body .ficha_producto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+body .ficha_producto img {
+  width: 50%;
 }
 body .precio {
   font-family: "Pixel-Titulo";
