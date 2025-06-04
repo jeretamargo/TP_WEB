@@ -140,6 +140,7 @@ body .productos {
   gap: 1%;
 }
 body .productos .producto {
+  text-align: center;
   position: relative;
   margin: 1.5em;
   padding-bottom: 50px;
