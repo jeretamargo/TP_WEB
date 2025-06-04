@@ -130,7 +130,6 @@ body .titulo_productos {
   display: inline;
   margin-top: 1em;
   width: 100%;
-  font-size: 4em;
   color: rgb(27, 44, 154);
   font-family: "Pixel-Titulo";
   text-shadow: 1px 1px 0 #000;
@@ -138,15 +137,22 @@ body .titulo_productos {
 }
 body .productos {
   position: relative;
-  display: flex;
   gap: 1%;
-  justify-content: space-around;
-  flex-wrap: wrap;
 }
 body .productos .producto {
-  padding: 2%;
+  position: relative;
+  margin: 1.5em;
+  padding-bottom: 50px;
+  padding: 2px;
   border-radius: 10%;
-  border: 2% solid rgba(0, 255, 0, 0.235);
+  border: 2px solid rgba(0, 255, 0, 0.235);
+}
+body .productos .producto img {
+  max-width: 200px;
+  height: auto;
+}
+body .productos a {
+  font-size: small;
 }
 body .productos .precio {
   font-family: "Pixel-Titulo";
@@ -231,6 +237,9 @@ a {
 
 footer {
   background-image: linear-gradient(to right, rgba(30, 30, 30, 0.048), rgba(190, 6, 214, 0.26));
+}
+footer a {
+  text-decoration: none;
 }
 
 * {

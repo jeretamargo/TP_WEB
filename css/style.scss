@@ -168,7 +168,7 @@ body{
       display:inline;
       margin-top: 1em;
       width: 100%;
-      font-size: 4em;
+      //font-size: 4em;
       color:$deepBlue;
       font-family: "Pixel-Titulo";
       text-shadow: 1px 1px 0 #000;
@@ -176,18 +176,29 @@ body{
  }
  .productos{
    position: relative;
-   display: flex;
+   //display: flex;
    gap:1%;
 
-   justify-content: space-around;//los items tienen espacio alrededor
-   flex-wrap: wrap;// para que bajen si no hay espacio
+   //justify-content: space-around;//los items tienen espacio alrededor
+   //flex-wrap: wrap;// para que bajen si no hay espacio
    
    .producto{
-    padding: 2%;
-    border-radius: 10%;
-    border: 2% solid $border;
-   }
    
+    position: relative;
+    margin: 1.5em;
+    padding-bottom: 50px;
+    padding: 2px;
+    border-radius: 10%;
+    border: 2px solid $border;
+      img{
+        max-width: 200px;
+        //width: 100%;
+        height: auto;
+      }
+   }
+   a{
+    font-size: small;
+   }
    .precio{
         font-family: "Pixel-Titulo";
         font-size: 2em;
@@ -294,7 +305,9 @@ a{
 
 footer{
   @include gradiente-lineal-transparente(rgba(30, 30, 30, 0.048),rgba(190, 6, 214, 0.26));
-  
+  a{
+    text-decoration: none;
+  }
   
   }
 
