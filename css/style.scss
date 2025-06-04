@@ -247,15 +247,14 @@ body{
       color:$brightYellow;
       font-family: "Pixel-Titulo";
       text-shadow: 1px 1px 0 #000;
-      
+      width: 100%;
+      font-size: clamp(3rem, 4vw, 3.5rem);;
+        
       
   }
   .ficha_producto{
     
-   img{
-    width: 100%;
-    height: auto;
-   }
+  
    
   }
   .descripcion_producto{

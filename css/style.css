@@ -189,10 +189,8 @@ body .titulo_ficha {
   color: #ffe36e;
   font-family: "Pixel-Titulo";
   text-shadow: 1px 1px 0 #000;
-}
-body .ficha_producto img {
   width: 100%;
-  height: auto;
+  font-size: clamp(3rem, 4vw, 3.5rem);
 }
 body .descripcion_producto {
   font-size: 1.1em;
