@@ -10,7 +10,7 @@ header {
   background-image: linear-gradient(to right, rgba(27, 44, 154, 0.3), rgba(76, 229, 224, 0.1));
 }
 header h1 {
-  padding: 20%;
+  padding: 6%;
   color: rgb(76, 229, 224);
   font-family: "Pixel-Titulo";
   font-size: 2.5em;
@@ -23,7 +23,7 @@ header nav ul li {
   text-align: center;
 }
 header nav ul li a {
-  font-size: 1.2em;
+  font-size: 0.9em;
   border-radius: 8px;
   transition: background 0.3s ease;
   text-decoration: none;
@@ -149,7 +149,8 @@ body .productos .producto {
   border: 2px solid rgba(0, 255, 0, 0.235);
 }
 body .productos .producto img {
-  max-width: 200px;
+  max-width: 100%;
+  width: 200px;
   height: auto;
 }
 body .productos a {

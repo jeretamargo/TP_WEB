@@ -5,7 +5,10 @@ header{
   @include gradiente-lineal-transparente(rgba(27, 44, 154, 0.3), rgba(76, 229, 224, 0.1));
   
   h1{
-    padding: 20%;
+    
+    padding: 6%;
+    
+   
     color: $cyanAccent;
     font-family: "Pixel-Titulo";
     font-size: 2.5em;
@@ -22,7 +25,7 @@ header{
         
         text-align: center;
         a{
-          font-size: 1.2em;
+          font-size: 0.9em;
           border-radius: 8px;
           transition: background 0.3s ease;
           text-decoration: none;//saca subrayado de los links
@@ -191,8 +194,9 @@ body{
     border-radius: 10%;
     border: 2px solid $border;
       img{
-        max-width: 200px;
-        //width: 100%;
+        max-width: 100%;
+        //min-height: 150px;
+        width: 200px;
         height: auto;
       }
    }
