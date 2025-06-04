@@ -191,27 +191,31 @@ body .titulo_ficha {
   text-shadow: 1px 1px 0 #000;
 }
 body .ficha_producto img {
-  width: 50%;
+  width: 100%;
+  height: auto;
+}
+body .descripcion_producto {
+  font-size: 1.1em;
 }
 body .precio {
   font-family: "Pixel-Titulo";
-  font-size: 1.2em;
+  font-size: 2.2em;
 }
 body p {
   font-family: "Pixel-Texto";
 }
 body .average {
-  font-size: 1.1em;
+  font-size: 1.3em;
   color: #aaaaaa;
   text-shadow: 2px 2px #000;
 }
 body .poco_comun {
-  font-size: 1.1em;
+  font-size: 1.3em;
   color: #fff700;
   text-shadow: 0 0 1em #fff700;
 }
 body .epico {
-  font-size: 1.1em;
+  font-size: 1.3em;
   color: #ff0033;
   text-shadow: 0 0 1em #ff0033;
 }

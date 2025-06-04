@@ -253,13 +253,17 @@ body{
   .ficha_producto{
     
    img{
-    width: 50%;
+    width: 100%;
+    height: auto;
    }
    
   }
+  .descripcion_producto{
+    font-size: 1.1em;
+  }
   .precio{
         font-family: "Pixel-Titulo";
-        font-size: 1.2em;
+        font-size: 2.2em;
         
       }
     
@@ -268,17 +272,17 @@ body{
       
     }
      .average{
-        font-size: 1.1em;
+        font-size: 1.3em;
         color: $average;
         text-shadow: 2px 2px  #000;
       }
       .poco_comun{
-        font-size: 1.1em;
+        font-size: 1.3em;
         color:$poco_comun;
         text-shadow: 0 0 1em #fff700
       }
       .epico{
-        font-size: 1.1em;
+        font-size: 1.3em;
         color:$epic;
         text-shadow: 0 0 1em #ff0033;
         
@@ -317,7 +321,9 @@ footer{
 }
 body {
   overflow-x: hidden;
+
 }
-//* {
-//  outline: 1px solid rgba(255, 0, 0, 0.2);
-//}
+ //*{
+ // outline: 1px solid rgba(255, 0, 0, 0.2);
+// }
+
