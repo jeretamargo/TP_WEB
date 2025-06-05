@@ -324,13 +324,25 @@ footer{
   
   }
 
-
 * {
   box-sizing: border-box;
 }
 body {
   overflow-x: hidden;
 
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1; // ocupa todo el espacio posible
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
  //*{
  // outline: 1px solid rgba(255, 0, 0, 0.2);
