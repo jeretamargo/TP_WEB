@@ -202,17 +202,20 @@ body .precio {
 body p {
   font-family: "Pixel-Texto";
 }
-body .average {
+
+.average {
   font-size: 1.3em;
   color: #aaaaaa;
   text-shadow: 2px 2px #000;
 }
-body .poco_comun {
+
+.poco_comun {
   font-size: 1.3em;
   color: #fff700;
   text-shadow: 0 0 1em #fff700;
 }
-body .epico {
+
+.epico {
   font-size: 1.3em;
   color: #ff0033;
   text-shadow: 0 0 1em #ff0033;
