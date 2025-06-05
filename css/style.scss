@@ -79,9 +79,13 @@ body{
  
     
     .oferta{
+      text-align: center;
+      position: relative;// para que el boton quede al lado
       img{
-        size: 50%;
-        width: 100%;
+        max-width: 100%;
+        //min-height: 150px;
+        width: 200px;
+        height: auto;
       }
       a{
         text-decoration: none;
@@ -101,8 +105,10 @@ body{
 .card_producto_arma img,
 .card_producto_herramienta img {
   display: block;
-  width: 100%; 
-  height: auto;
+  max-width: 100%;
+        //min-height: 150px;
+        width: 250px;
+        height: auto;
   object-fit: contain;
   z-index: 1;
 }

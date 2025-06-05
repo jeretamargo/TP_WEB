@@ -57,9 +57,14 @@ body .titulo {
   text-shadow: 1px 1px white;
   font-size: clamp(3rem, 4vw, 3.5rem);
 }
+body .oferta {
+  text-align: center;
+  position: relative;
+}
 body .oferta img {
-  size: 50%;
-  width: 100%;
+  max-width: 100%;
+  width: 200px;
+  height: auto;
 }
 body .oferta a {
   text-decoration: none;
@@ -72,7 +77,8 @@ body .oferta button {
 .card_producto_arma img,
 .card_producto_herramienta img {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  width: 250px;
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
@@ -192,14 +198,17 @@ body .titulo_ficha {
   width: 100%;
   font-size: clamp(3rem, 4vw, 3.5rem);
 }
-body .descripcion_producto {
+
+.descripcion_producto {
   font-size: 1.1em;
 }
-body .precio {
+
+.precio {
   font-family: "Pixel-Titulo";
   font-size: 2.2em;
 }
-body p {
+
+p {
   font-family: "Pixel-Texto";
 }
 
