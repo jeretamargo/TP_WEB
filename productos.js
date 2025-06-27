@@ -2,29 +2,49 @@ function cargarProductos(productosJson){
     let productos= document.querySelector("#productos");//document hace referencia al DOM, productos es el section del html
     productos.innerHTML="";                                  //limpiamos el cotenedor
     //productos Json es un arreglo de objetos, cada iteracion devuelve un objeto que se asigna a "producto"
-    for (let producto of productosJson){//producto es cada elemento del objeto json (con sus atributos precio imagen)
+    productosJson.forEach((producto, index) => {//producto es cada elemento del objeto json (con sus atributos precio imagen)
+
+            /*Pasamos un segundo argumento que el forEach usa para como indice y le llamamos index, es el que nos va a indicar en que
+            elemento estamos, tambien podriamos usar un for tradicional*/
+
             // template empieza con la comilla invertida del template literals
             //data- es un atributo de html5 permite guardar datos del objeto, por defecto data es string
-        let template= ` 
-        <article data-precio= ${producto.precio} class="col-12 col-sm-6 col-md-3   justify-content-center">
-        <div class="position-relative">
-            <img src=${producto.imagen}  alt="">
-            <button class="btn  btn-info position-absolute bottom-0 end-0  rounded-pill">+</button>
-        </div>
-        <div class="d-flex flex-column gap-1 mt-2">
-            <p class="mb-0">${producto.categoria}</p>
-           
-                <h3 class="h5 mb-0">${producto.titulo}</h3> 
-                <div>${formatearPrecio(producto.precio)}</div>
             
-        </div>
-        </article>
+            /*Dentro del titlo del producto, vamos a insertar un elemento <a>, para generar un link al html que cargara todos nuestros
+            productos, llamado "producto.html".
+            
+            Usamos un "Parametro de busqueda" que se especifica con el simbolo "?" , a continuacion, 
+            creamos un parametro de busqueda llamado "index" al que le asignaremos el index del array de objetos, asi, cada producto tendra
+            su propia url que llevara a productos.html, donde hay un script que se encarga de leer el index y traer el producto especificado*/
+        let template= `
+                
+                <article data-precio= ${producto.precio} class="productos col-12 col-sm-6 col-md-3 items-aligin-center  justify-content-center">
+                
+                    <div class="position-relative r">
+                        <img src=${producto.imagen} class="img-fluid foto   wd-80" alt="">
+                        <button class="btn  btn-info position-absolute bottom-0 end-0  rounded-pill">+</button>
+                    </div>
+                    <div class="d-flex flex-column gap-1 mt-2">
+                        <p class="mb-0">${producto.categoria}</p>
+                    <a href="producto.html?index=${index}">
+                            <h3 class="h5 mb-0">${producto.titulo}</h3> 
+                    </a>
+                            <div>${formatearPrecio(producto.precio)}</div>
+                        
+                    </div>
+                
+                </article>
+          
+        
+        
         `;
         //antes del final del section inserta cada producto ,  los convierte en nodos
         productos.insertAdjacentHTML("beforeend", template);
     }
-}
+)}
 //fin funcion
+//funcion cargar ficha
+
 
 function formatearPrecio(precio){
     //int1.numerformat es una herrramienta de JS formatea numeros segun la region
