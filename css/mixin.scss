@@ -1,15 +1,15 @@
 @mixin gradiente{
-  background-image: radial-gradient($cyanAccent,$deepBlue);
+  background-image: radial-gradient($blanco, $blanco_hueso);
 }
 
 @mixin font-face{
   @font-face {
-  font-family: "Pixel-Titulo";
-  src: url('../fonts/Jersey15-Regular.ttf');
+  font-family: "Titulos";
+  src: url('../fonts/Montserrat-Bold.ttf');
 }
 @font-face {
-  font-family: "Pixel-Texto";
-  src: url('../fonts/PixelifySans-VariableFont_wght.ttf');
+  font-family: "Textos";
+  src: url('../fonts/Montserrat-Regular.ttf');
 }
 }
 @mixin gradiente-general($color1, $color2) {
