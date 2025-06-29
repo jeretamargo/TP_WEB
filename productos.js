@@ -18,15 +18,15 @@ function cargarProductos(productosJson){
             su propia url que llevara a productos.html, donde hay un script que se encarga de leer el index y traer el producto especificado*/
         let template= `
                 
-                <article data-precio= ${producto.precio} class="productos col-12 col-sm-6 col-md-3 items-aligin-center  justify-content-center">
+                <article data-precio= ${producto.precio} class="productos json col-6 col-sm-6 col-md-3 align-items-center  justify-content-center  " >
                 
-                    <div class="position-relative r">
-                        <img src=${producto.imagen} class="img-fluid foto   wd-80" alt="">
-                        <button class="btn  btn-info position-absolute bottom-0 end-0  rounded-pill">+</button>
+                    <div class="position-relative r img-wrap">
+                        <img src=${producto.imagen} class="img-fluid foto  rounded" alt="">
+                        <button class="btn  btn-dark position-absolute bottom-0 end-0  rounded-pill">+</button>
                     </div>
                     <div class="d-flex flex-column gap-1 mt-2">
                         <p class="mb-0">${producto.categoria}</p>
-                    <a href="producto.html?index=${index}">
+                    <a href="producto.html?index=${index}" >
                             <h3 class="h5 mb-0">${producto.titulo}</h3> 
                     </a>
                             <div>${formatearPrecio(producto.precio)}</div>

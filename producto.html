@@ -35,23 +35,23 @@
         producto.innerHTML="";
         let template= `
 
-                    <article data-precio= ${producto_elegido.precio} class="productos col-12 items-aligin-center  justify-content-center">
-                    
-                        <div class="position-relative r">
-                            <h1 class="h1 mb-5">${producto_elegido.titulo}</h1> 
-                            <img src=${producto_elegido.imagen} class="img-fluid foto   wd-100" alt="">
-                            <button class="btn  btn-info position-relative bottom-0 end-0  rounded-pill">+</button>
-                        </div>
-                        <div class="d-flex flex-column gap-1 mt-2">
-                            <p class="mb-0">${producto_elegido.categoria}</p>
-                        
-                                
-                        
-                                <div><h3>${formatearPrecio(producto_elegido.precio)}</h3></div>
-                            
-                        </div>
-                    
-                    </article>
+                    <article data-precio="${producto_elegido.precio}" class="productos col-12 d-flex flex-column align-items-center justify-content-center">
+  
+                 <h1 class="h1 mb-4 text-center">${producto_elegido.titulo}</h1> 
+  
+                <div class="img-wrap position-relative">
+                            <img src="${producto_elegido.imagen}" class="img-fluid foto" alt="">
+                <button class="btn btn-dark position-absolute bottom-0 end-0 rounded-pill">+</button>
+            </div>
+
+            <div class="d-flex flex-column gap-1 mt-2 text-center">
+                <p class="mb-0">${producto_elegido.categoria}</p>
+                <h3 class="mb-0">${formatearPrecio(producto_elegido.precio)}</h3>
+            </div>
+            </article>
+
+
+
             `;
             
             producto.insertAdjacentHTML("beforeend", template);
@@ -81,15 +81,15 @@
                         <div class="col-12  col-lg-8 d-flex justify-content-center fs-6 align-items-center" >
                             <ul class="d-flex list-unstyled w-100 gap-2" >
                                 <li class="flex-fill text-center  "><a class="d-flex align-items-center justify-content-center gap-2 p-2 w-100 h-100" href="./index.html#oferta"> <img src="./content/sale-03-svgrepo-com.svg"> Ofertas</a></li>
-                                <li class="flex-fill text-center  "><a class="d-flex align-items-center justify-content-center gap-2 w-100 h-100" href="./index.html#producto"><img src="./content/cart-shopping-fast-svgrepo-com.svg">Prodcutos</a></li>
-                                <li class="flex-fill text-center "><a class="d-flex align-items-center justify-content-center gap-2 w-100 h-100" href="./index.html#contacto"><img src="./content/contact-us-svgrepo-com.svg">Contactanos</a></li>
+                                <li class="flex-fill text-center  "><a class="d-flex align-items-center justify-content-center gap-2 w-100 h-100" href="./index.html#producto"><img src="./content/cart-shopping-fast-svgrepo-com.svg">Productos</a></li>
+                                <li class="flex-fill text-center "><a class="d-flex align-items-center justify-content-center gap-2 w-100 h-100" href="./index.html#contacto"><img src="./content/contact-us-svgrepo-com.svg">Contáctenos</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>       
             </nav>
         </header>
-
+    <main id="main-ficha">
     <section id="ficha" class="row  g-5 m-5"></section>
     <footer>
             <div class="container mt-3">
@@ -103,5 +103,6 @@
                 </div>
             </div>    
         </footer>
+    </main>
 </body>
 </html>
