@@ -3,7 +3,7 @@
 @include font-face;
 header{
  
-  @include gradiente-lineal-transparente(rgba(120, 66, 18, 0.8),rgba(120, 66, 18, 0.575));
+  @include gradiente-lineal-transparente(#784212cc,rgba(120, 66, 18, 0.575));
   
   h1{
     
@@ -36,13 +36,12 @@ header{
         a{
           font-size: 0.9em;
           border-radius: 8px;
-          transition: background 0.3s ease;
           text-decoration: none;//saca subrayado de los links
           color: $blanco;
-          
-          
+          transition: all 0.3s;
           &:hover{
-            @include gradiente-general($azul-hover, $azul)
+            //@include gradiente-general($dark, $gris-claro);
+            transform: scale(1.1,1.1);
           }
           
         }
@@ -175,6 +174,7 @@ main{
 .card_producto_consumible,
 .card_producto_arma,
 .card_producto_herramienta{
+  transition: all 00.2s ease;
   font-family: "Titulos";
   position: relative;
   display: flex;
@@ -189,19 +189,21 @@ main{
 .card_producto_consumible:hover,
 .card_producto_arma:hover,
 .card_producto_herramienta:hover{
-   @include gradiente-general($azul-hover, $blanco);
-   transition: background 00.2s;
+   //@include gradiente-general($gris-oscuro, $blanco);
+   
+   transform: scale(1.1,1.1);
    
 }
 .card_producto_consumible h3 ,
 .card_producto_arma h3 ,
 .card_producto_herramienta h3{
+  color: $marron;
   position: absolute;
   top: 43%;                   // Centra verticalmente (mitad del contenedor)
   left: 50%;                  // Centra horizontalmente
   transform: translate(-50%, -50%); // Ajusta el punto de anclaje al centro
   margin-bottom: 0.5rem;
-  text-shadow: 1px 1px 3px #000000;
+  text-shadow: 2px 2px 3px #000000;
   font-size: 25pt;
   z-index: 2;
   
@@ -326,22 +328,7 @@ body{
       font-family: "Textos";
       
     }
-     .average{
-        font-size: 1.3em;
-        color: $average;
-        text-shadow: 2px 2px  #000;
-      }
-      .poco_comun{
-        font-size: 1.3em;
-        color:$poco_comun;
-        text-shadow: 0 0 1em #fff700
-      }
-      .epico{
-        font-size: 1.3em;
-        color:$epic;
-        text-shadow: 0 0 1em #ff0033;
-        
-      }
+     
 
 //FICHA_PRODUCTO_FIN
 
@@ -354,8 +341,6 @@ p{
 
 a{
   font-family: "Textos";
-  color: $azul;
-  
   text-decoration: none;
 }
 
@@ -419,7 +404,5 @@ body{
     font-family: "Textos";
   }
 }
- //*{
- // outline: 1px solid rgba(255, 0, 0, 0.2);
-// }
+
 

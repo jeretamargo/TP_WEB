@@ -28,12 +28,12 @@ header nav ul li {
 header nav ul li a {
   font-size: 0.9em;
   border-radius: 8px;
-  transition: background 0.3s ease;
   text-decoration: none;
   color: #e6e2e2;
+  transition: all 0.3s;
 }
 header nav ul li a:hover {
-  background-image: radial-gradient(rgba(0, 106, 255, 0.5254901961), #1E90FF);
+  transform: scale(1.1, 1.1);
 }
 header nav ul li img {
   width: 2.2rem;
@@ -108,6 +108,7 @@ body .oferta button {
 .card_producto_consumible,
 .card_producto_arma,
 .card_producto_herramienta {
+  transition: all 0.2s ease;
   font-family: "Titulos";
   position: relative;
   display: flex;
@@ -123,19 +124,19 @@ body .oferta button {
 .card_producto_consumible:hover,
 .card_producto_arma:hover,
 .card_producto_herramienta:hover {
-  background-image: radial-gradient(rgba(0, 106, 255, 0.5254901961), #e6e2e2);
-  transition: background 0.2s;
+  transform: scale(1.1, 1.1);
 }
 
 .card_producto_consumible h3,
 .card_producto_arma h3,
 .card_producto_herramienta h3 {
+  color: #ab6426;
   position: absolute;
   top: 43%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin-bottom: 0.5rem;
-  text-shadow: 1px 1px 3px #000000;
+  text-shadow: 2px 2px 3px #000000;
   font-size: 25pt;
   z-index: 2;
 }
@@ -213,24 +214,6 @@ p {
   font-family: "Textos";
 }
 
-.average {
-  font-size: 1.3em;
-  color: #aaaaaa;
-  text-shadow: 2px 2px #000;
-}
-
-.poco_comun {
-  font-size: 1.3em;
-  color: #fff700;
-  text-shadow: 0 0 1em #fff700;
-}
-
-.epico {
-  font-size: 1.3em;
-  color: #ff0033;
-  text-shadow: 0 0 1em #ff0033;
-}
-
 p {
   color: #2E2E2E;
   text-shadow: 1px 1px 0 #e6e2e2;
@@ -239,7 +222,6 @@ p {
 
 a {
   font-family: "Textos";
-  color: #1E90FF;
   text-decoration: none;
 }
 
