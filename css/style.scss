@@ -96,10 +96,14 @@ body{
     }
   }
 }
+main{
+  flex: 1;
+
+}
   #ficha{
     align-items: center;
-    flex: 1;
-     transition: background 0.2s;
+    
+    transition: background 0.2s;
 
   .img-wrap {
    
@@ -387,6 +391,33 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+//FORMULARIO DE CARGA
+body{
+  .container{
+    flex: 1;
+  }
+  .formulario-carga{
+    h1{
+      font-family: "Titulos";
+      color: $gris-oscuro;
+      text-shadow: 1px 1px 0px #000000;
+    }
+    label{
+        font-family: "Textos";
+        font-size: 1.3em;
+    }
+    input{
+      font-family: "Textos";
+    }
+    textarea{
+      font-family: "Textos";
+    }
+  }
+  #tipo_producto{
+    font-family: "Textos";
+  }
 }
  //*{
  // outline: 1px solid rgba(255, 0, 0, 0.2);

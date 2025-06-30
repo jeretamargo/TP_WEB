@@ -59,9 +59,11 @@ body .json .img-wrap img {
 body .json:hover .img-wrap img {
   transform: scale(1.1, 1.1);
 }
+body main {
+  flex: 1;
+}
 body #ficha {
   align-items: center;
-  flex: 1;
   transition: background 0.2s;
 }
 body #ficha .img-wrap img {
@@ -270,4 +272,26 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+body .container {
+  flex: 1;
+}
+body .formulario-carga h1 {
+  font-family: "Titulos";
+  color: #2c3e50;
+  text-shadow: 1px 1px 0px #000000;
+}
+body .formulario-carga label {
+  font-family: "Textos";
+  font-size: 1.3em;
+}
+body .formulario-carga input {
+  font-family: "Textos";
+}
+body .formulario-carga textarea {
+  font-family: "Textos";
+}
+body #tipo_producto {
+  font-family: "Textos";
 }/*# sourceMappingURL=style.css.map */
