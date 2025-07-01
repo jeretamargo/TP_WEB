@@ -14,16 +14,13 @@ header{
     text-shadow: 1px 1px 0px $dark;
     
   }
-  #main-ficha {
-  //background-color: #f5f5f5;
   
-}
 
   nav{
   
     div{
       a{
-        text-decoration: none
+        text-decoration: none;
       }
     }
     ul{
@@ -166,7 +163,7 @@ main{
 .card_producto_herramienta img {
   display: block;
   max-width: 100%;
-        max-height: 200px;
+        //max-height: 200px;
         //width: 250px;
         height: auto;
   object-fit: contain;
@@ -204,7 +201,7 @@ main{
   left: 50%;                  // Centra horizontalmente
   transform: translate(-50%, -50%); // Ajusta el punto de anclaje al centro
   margin-bottom: 0.5rem;
-  text-shadow: 2px 2px 3px #000000;
+  text-shadow: 1px 1px 2px #000000;
   font-size: 25pt;
   z-index: 2;
   
@@ -217,7 +214,7 @@ main{
 //CONTACTO INICIO
 
 .formulario{
-  font-family: "Textos";
+  font-family: "Parrafos";
   font-size: 1.2em;
   color:$gris-oscuro;
   text-shadow: 1px 1px 1px white;
@@ -339,7 +336,12 @@ p{
   text-shadow: 1px 1px 0 $blanco;
   text-decoration-color: #000;
 }
-
+article{
+  a{
+  font-family: "Parrafos";
+  text-decoration: none;
+}
+}
 a{
   font-family: "Textos";
   text-decoration: none;
@@ -396,19 +398,19 @@ body{
       text-shadow: 1px 1px 0px #000000;
     }
     label{
-        font-family: "Textos";
+        font-family: "Parrafos";
         font-size: 1.3em;
         
     }
     input{
-      font-family: "Textos";
+      font-family: "Parrafos";
     }
     textarea{
-      font-family: "Textos";
+      font-family: "Parrafos";
     }
   }
   #tipo_producto{
-    font-family: "Textos";
+    font-family: "Parrafos";
     display: block;
   }
   #radio{

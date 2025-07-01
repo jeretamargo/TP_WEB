@@ -5,11 +5,20 @@
 @mixin font-face{
   @font-face {
   font-family: "Titulos";
-  src: url('../fonts/Montserrat-Bold.ttf');
+   src: url('../fonts/BaskervvilleSC-SemiBold.woff2') format("woff2");
+  //src: url('../fonts/Montserrat-Bold.ttf');
 }
 @font-face {
+
   font-family: "Textos";
-  src: url('../fonts/Montserrat-Regular.ttf');
+  src: url('../fonts/BaskervvilleSC-Regular.woff2') format("woff2");
+  /*src: url('../fonts/Montserrat-Regular.ttf');*/
+}
+@font-face {
+
+  font-family: "Parrafos";
+  src: url('../fonts/Montserrat-Regular.ttf') format("woff2");
+  /*src: url('../fonts/Montserrat-Regular.ttf');*/
 }
 }
 @mixin gradiente-general($color1, $color2) {
