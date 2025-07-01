@@ -13,7 +13,7 @@
   /*src: url('../fonts/Montserrat-Regular.ttf');*/
 }
 header {
-  background-image: linear-gradient(to right, #9d6d44, rgb(185, 130, 82));
+  background-image: linear-gradient(to right, #8f643e, rgb(201, 143, 96));
 }
 header h1 {
   padding: 6%;
@@ -68,6 +68,11 @@ body .json:hover .img-wrap img {
 body main {
   flex: 1;
 }
+body main img {
+  max-height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 body #ficha {
   align-items: center;
   transition: background 0.2s;
@@ -84,6 +89,7 @@ body .titulo {
   font-family: "Titulos";
   text-shadow: 1px 1px #2E2E2E;
   font-size: clamp(3rem, 4vw, 3.5rem);
+  text-align: center;
 }
 body .oferta {
   text-align: center;
