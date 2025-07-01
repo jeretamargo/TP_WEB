@@ -3,7 +3,7 @@
 @include font-face;
 header{
  
-  @include gradiente-lineal-transparente(#9d6d44,rgb(185, 130, 82));
+  @include gradiente-lineal-transparente(#8f643e,rgb(201, 143, 96));
   
   h1{
     
@@ -95,7 +95,12 @@ body{
 }
 main{
   flex: 1;
+  img{
 
+    max-height: 250px;
+   // width: auto;
+    object-fit: cover;
+  }
 }
   #ficha{
     align-items: center;
