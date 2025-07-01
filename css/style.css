@@ -258,6 +258,9 @@ html, body {
 body .container {
   flex: 1;
 }
+body .formulario-carga textarea {
+  resize: none;
+}
 body .formulario-carga h1 {
   font-family: "Titulos";
   color: #2c3e50;
@@ -275,6 +278,10 @@ body .formulario-carga textarea {
 }
 body #tipo_producto {
   font-family: "Textos";
+  display: block;
+}
+body #radio {
+  font-size: 1em;
 }
 
 body header {
