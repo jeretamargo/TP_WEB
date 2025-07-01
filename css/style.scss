@@ -3,7 +3,7 @@
 @include font-face;
 header{
  
-  @include gradiente-lineal-transparente(#784212cc,rgba(120, 66, 18, 0.575));
+  @include gradiente-lineal-transparente(#9d6d44,rgb(185, 130, 82));
   
   h1{
     
@@ -18,8 +18,9 @@ header{
   //background-color: #f5f5f5;
   
 }
+
   nav{
-    
+  
     div{
       a{
         text-decoration: none
@@ -373,13 +374,15 @@ body {
   flex: 1; // ocupa todo el espacio posible
 }
 html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  //height: 100%;
+  min-height: 100vh;
+  flex:1;
 }
+  
 
 //FORMULARIO DE CARGA
 body{
+  
   .container{
     flex: 1;
   }
@@ -405,4 +408,11 @@ body{
   }
 }
 
+body{
+  header{
+    position: sticky;
+    top: 0%;
+    z-index: 4;
+  }
+}
 

@@ -7,7 +7,7 @@
   src: url("../fonts/Montserrat-Regular.ttf");
 }
 header {
-  background-image: linear-gradient(to right, rgba(120, 66, 18, 0.8), rgba(120, 66, 18, 0.575));
+  background-image: linear-gradient(to right, #9d6d44, rgb(185, 130, 82));
 }
 header h1 {
   padding: 6%;
@@ -251,9 +251,8 @@ body {
 }
 
 html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  min-height: 100vh;
+  flex: 1;
 }
 
 body .container {
@@ -276,4 +275,10 @@ body .formulario-carga textarea {
 }
 body #tipo_producto {
   font-family: "Textos";
+}
+
+body header {
+  position: sticky;
+  top: 0%;
+  z-index: 4;
 }/*# sourceMappingURL=style.css.map */
