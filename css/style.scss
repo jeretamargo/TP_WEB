@@ -296,31 +296,7 @@ body{
 
 //LISTA_PRODUCTOS_FIN
 
-//FICHA_PRODUCTO_INICIO
-body{
-  .titulo_ficha{
-      font-size: 10em;
-      color:$brightYellow;
-      font-family: "Titulos";
-      text-shadow: 1px 1px 0 #000;
-      width: 100%;
-      font-size: clamp(3rem, 4vw, 3.5rem);;
-        
-      
-  }
-  
-    
-  
-   
-  }
-  .descripcion_producto{
-    font-size: 1.1em;
-  }
-  .precio{
-        font-family: "Titulos";
-        font-size: 2.2em;
-        
-      }
+
     
     p{
       font-family: "Textos";
@@ -328,14 +304,8 @@ body{
     }
      
 
-//FICHA_PRODUCTO_FIN
 
 
-p{
-  color: $dark;
-  text-shadow: 1px 1px 0 $blanco;
-  text-decoration-color: #000;
-}
 article{
   a{
   font-family: "Parrafos";
@@ -347,7 +317,7 @@ a{
   text-decoration: none;
 }
 
-
+//INICIO FOOTER
 
 footer{
   position: relative;
@@ -380,9 +350,10 @@ html, body {
   min-height: 100vh;
   flex:1;
 }
-  
+// FINAL FOOTER
 
-//FORMULARIO DE CARGA
+
+//INICIO FORMULARIO DE CARGA
 body{
   
   .container{
@@ -417,7 +388,7 @@ body{
              font-size: 1.0em;
         }
 }
-
+//FINAL FORMULARIO DE CARGA
 body{
   header{
     position: sticky;

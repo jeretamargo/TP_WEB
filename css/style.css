@@ -197,32 +197,8 @@ body .productos a {
   font-size: small;
 }
 
-body .titulo_ficha {
-  font-size: 10em;
-  color: #ffe36e;
-  font-family: "Titulos";
-  text-shadow: 1px 1px 0 #000;
-  width: 100%;
-  font-size: clamp(3rem, 4vw, 3.5rem);
-}
-
-.descripcion_producto {
-  font-size: 1.1em;
-}
-
-.precio {
-  font-family: "Titulos";
-  font-size: 2.2em;
-}
-
 p {
   font-family: "Textos";
-}
-
-p {
-  color: #2E2E2E;
-  text-shadow: 1px 1px 0 #e6e2e2;
-  text-decoration-color: #000;
 }
 
 article a {
