@@ -2,7 +2,9 @@
 @import "mixin.scss";
 @include font-face;
 header{
- 
+    position: sticky;
+    top: 0%;
+    z-index: 4;
   @include gradiente-lineal-transparente(#8f643e,rgb(201, 143, 96));
   
   h1{
@@ -205,8 +207,8 @@ main{
   left: 50%;                  // Centra horizontalmente
   transform: translate(-50%, -50%); // Ajusta el punto de anclaje al centro
   margin-bottom: 0.5rem;
-  text-shadow: 1px 1px 2px #000000;
-  font-size: 25pt;
+  text-shadow: 1px 1px 4px #000000;
+  font-size: 35pt;
   z-index: 2;
   
 
@@ -393,7 +395,8 @@ body{
         }
 }
 //FINAL FORMULARIO DE CARGA
-body{
+
+/*body{
   header{
     position: sticky;
     top: 0%;
@@ -401,3 +404,4 @@ body{
   }
 }
 
+*/

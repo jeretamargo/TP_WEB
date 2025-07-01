@@ -13,6 +13,9 @@
   /*src: url('../fonts/Montserrat-Regular.ttf');*/
 }
 header {
+  position: sticky;
+  top: 0%;
+  z-index: 4;
   background-image: linear-gradient(to right, #8f643e, rgb(201, 143, 96));
 }
 header h1 {
@@ -141,14 +144,14 @@ body .oferta button {
 .card_producto_consumible h3,
 .card_producto_arma h3,
 .card_producto_herramienta h3 {
-  color: #ab6426;
+  color: #ff9538;
   position: absolute;
   top: 43%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin-bottom: 0.5rem;
-  text-shadow: 1px 1px 2px #000000;
-  font-size: 25pt;
+  text-shadow: 1px 1px 4px #000000;
+  font-size: 35pt;
   z-index: 2;
 }
 
@@ -276,8 +279,12 @@ body #radio {
   font-size: 1em;
 }
 
-body header {
-  position: sticky;
-  top: 0%;
-  z-index: 4;
-}/*# sourceMappingURL=style.css.map */
+/*body{
+  header{
+    position: sticky;
+    top: 0%;
+    z-index: 4;
+  }
+}
+
+*//*# sourceMappingURL=style.css.map */
