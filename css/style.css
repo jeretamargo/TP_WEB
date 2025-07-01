@@ -1,10 +1,11 @@
 @font-face {
   font-family: "Titulos";
-  src: url("../fonts/Montserrat-Bold.ttf");
+  src: url("../fonts/BaskervvilleSC-SemiBold.woff2") format("woff2");
 }
 @font-face {
   font-family: "Textos";
-  src: url("../fonts/Montserrat-Regular.ttf");
+  src: url("../fonts/BaskervvilleSC-Regular.woff2") format("woff2");
+  /*src: url('../fonts/Montserrat-Regular.ttf');*/
 }
 header {
   background-image: linear-gradient(to right, rgba(120, 66, 18, 0.8), rgba(120, 66, 18, 0.575));
