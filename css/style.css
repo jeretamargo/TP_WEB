@@ -7,6 +7,11 @@
   src: url("../fonts/BaskervvilleSC-Regular.woff2") format("woff2");
   /*src: url('../fonts/Montserrat-Regular.ttf');*/
 }
+@font-face {
+  font-family: "Parrafos";
+  src: url("../fonts/Montserrat-Regular.ttf") format("woff2");
+  /*src: url('../fonts/Montserrat-Regular.ttf');*/
+}
 header {
   background-image: linear-gradient(to right, #8f643e, rgb(201, 143, 96));
 }
@@ -141,13 +146,13 @@ body .oferta button {
   left: 50%;
   transform: translate(-50%, -50%);
   margin-bottom: 0.5rem;
-  text-shadow: 2px 2px 3px #000000;
+  text-shadow: 1px 1px 2px #000000;
   font-size: 25pt;
   z-index: 2;
 }
 
 .formulario {
-  font-family: "Textos";
+  font-family: "Parrafos";
   font-size: 1.2em;
   color: #2c3e50;
   text-shadow: 1px 1px 1px white;
@@ -225,6 +230,11 @@ p {
   text-decoration-color: #000;
 }
 
+article a {
+  font-family: "Parrafos";
+  text-decoration: none;
+}
+
 a {
   font-family: "Textos";
   text-decoration: none;
@@ -263,23 +273,30 @@ html, body {
 body .container {
   flex: 1;
 }
+body .formulario-carga textarea {
+  resize: none;
+}
 body .formulario-carga h1 {
   font-family: "Titulos";
   color: #2c3e50;
   text-shadow: 1px 1px 0px #000000;
 }
 body .formulario-carga label {
-  font-family: "Textos";
+  font-family: "Parrafos";
   font-size: 1.3em;
 }
 body .formulario-carga input {
-  font-family: "Textos";
+  font-family: "Parrafos";
 }
 body .formulario-carga textarea {
-  font-family: "Textos";
+  font-family: "Parrafos";
 }
 body #tipo_producto {
-  font-family: "Textos";
+  font-family: "Parrafos";
+  display: block;
+}
+body #radio {
+  font-size: 1em;
 }
 
 body header {

@@ -206,7 +206,7 @@ main{
   left: 50%;                  // Centra horizontalmente
   transform: translate(-50%, -50%); // Ajusta el punto de anclaje al centro
   margin-bottom: 0.5rem;
-  text-shadow: 2px 2px 3px #000000;
+  text-shadow: 1px 1px 2px #000000;
   font-size: 25pt;
   z-index: 2;
   
@@ -219,7 +219,7 @@ main{
 //CONTACTO INICIO
 
 .formulario{
-  font-family: "Textos";
+  font-family: "Parrafos";
   font-size: 1.2em;
   color:$gris-oscuro;
   text-shadow: 1px 1px 1px white;
@@ -341,7 +341,12 @@ p{
   text-shadow: 1px 1px 0 $blanco;
   text-decoration-color: #000;
 }
-
+article{
+  a{
+  font-family: "Parrafos";
+  text-decoration: none;
+}
+}
 a{
   font-family: "Textos";
   text-decoration: none;
@@ -389,25 +394,33 @@ body{
     flex: 1;
   }
   .formulario-carga{
+    textarea{
+      resize: none;
+    }
     h1{
       font-family: "Titulos";
       color: $gris-oscuro;
       text-shadow: 1px 1px 0px #000000;
     }
     label{
-        font-family: "Textos";
+        font-family: "Parrafos";
         font-size: 1.3em;
+        
     }
     input{
-      font-family: "Textos";
+      font-family: "Parrafos";
     }
     textarea{
-      font-family: "Textos";
+      font-family: "Parrafos";
     }
   }
   #tipo_producto{
-    font-family: "Textos";
+    font-family: "Parrafos";
+    display: block;
   }
+  #radio{
+             font-size: 1.0em;
+        }
 }
 
 body{
