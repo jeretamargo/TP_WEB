@@ -21,7 +21,7 @@ function cargarProductos(productosJson){
                 <article data-precio= ${producto.precio} class="productos json col-6 col-sm-6 col-md-3 align-items-center  justify-content-center  " >
                 
                     <div class="position-relative r img-wrap">
-                        <img src=${producto.imagen} class="img-fluid w-75 foto  rounded" alt="">
+                        <img src=${producto.imagen} class="img-fluid  foto  rounded" alt="">
                         <button class="btn  btn-dark position-absolute bottom-0 end-0  rounded-pill">+</button>
                     </div>
                     <div class="d-flex flex-column gap-1 mt-2">
