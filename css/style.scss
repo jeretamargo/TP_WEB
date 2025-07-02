@@ -3,7 +3,8 @@
 @include font-face;
 header{
     position: sticky;
-    top: 0%;
+    top: 0;
+    
     z-index: 4;
   @include gradiente-lineal-transparente(#8f643e,rgb(201, 143, 96));
   
@@ -96,12 +97,13 @@ body{
   }
 }
 main{
+
   flex: 1;
   img{
 
     max-height: 250px;
    // width: auto;
-    object-fit: cover;
+    object-fit:cover;
   }
 }
   #ficha{
@@ -351,11 +353,13 @@ body {
 .page-content {
   flex: 1; // ocupa todo el espacio posible
 }
+
 html, body {
   //height: 100%;
   min-height: 100vh;
   flex:1;
-  overflow-x: hidden;
+  
+ 
 }
 // FINAL FOOTER
 

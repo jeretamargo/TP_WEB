@@ -14,7 +14,7 @@
 }
 header {
   position: sticky;
-  top: 0%;
+  top: 0;
   z-index: 4;
   background-image: linear-gradient(to right, #8f643e, rgb(201, 143, 96));
 }
@@ -248,7 +248,6 @@ body {
 html, body {
   min-height: 100vh;
   flex: 1;
-  overflow-x: hidden;
 }
 
 body .container {
